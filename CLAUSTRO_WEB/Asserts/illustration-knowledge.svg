@@ -1,0 +1,403 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600">
+<defs>
+  <radialGradient id="gk1" cx="50%" cy="50%" r="55%">
+    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="gk2" cx="50%" cy="50%" r="40%">
+    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.08"/>
+    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="bkL" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#F0DFB8" stop-opacity="0.9"/>
+    <stop offset="50%" stop-color="#F5EAC8" stop-opacity="0.95"/>
+    <stop offset="100%" stop-color="#EDD9A0" stop-opacity="0.9"/>
+  </linearGradient>
+  <linearGradient id="scroll1" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#EDD9A0" stop-opacity="0.85"/>
+    <stop offset="50%" stop-color="#F0DFB8" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#EDD9A0" stop-opacity="0.85"/>
+  </linearGradient>
+</defs>
+
+<!-- Central glow -->
+<ellipse cx="350" cy="300" rx="280" ry="250" fill="url(#gk1)"/>
+<ellipse cx="350" cy="300" rx="150" ry="130" fill="url(#gk2)"/>
+
+<!-- Stars scattered -->
+<g fill="#E8CC6B" opacity="0.55">
+  <circle cx="22" cy="28" r="1.5"/><circle cx="60" cy="10" r="1"/>
+  <circle cx="110" cy="42" r="2"/><circle cx="158" cy="15" r="1.5"/>
+  <circle cx="210" cy="32" r="1"/><circle cx="268" cy="6" r="1.5"/>
+  <circle cx="350" cy="16" r="2"/><circle cx="432" cy="8" r="1.5"/>
+  <circle cx="490" cy="38" r="1"/><circle cx="542" cy="14" r="2"/>
+  <circle cx="595" cy="30" r="1.5"/><circle cx="640" cy="8" r="1"/>
+  <circle cx="678" cy="25" r="1.5"/>
+  <!-- Side stars -->
+  <circle cx="12" cy="120" r="1.5"/><circle cx="688" cy="118" r="1.5"/>
+  <circle cx="8" cy="200" r="1"/><circle cx="692" cy="205" r="1"/>
+  <circle cx="15" cy="320" r="1.5"/><circle cx="685" cy="315" r="1.5"/>
+  <circle cx="22" cy="440" r="1"/><circle cx="678" cy="438" r="1"/>
+</g>
+
+<!-- Constellation (top center) -->
+<g opacity="0.55">
+  <!-- Constellation dots -->
+  <g fill="#E8CC6B">
+    <circle cx="280" cy="48" r="2.5"/>
+    <circle cx="310" cy="32" r="2"/>
+    <circle cx="350" cy="26" r="3"/>
+    <circle cx="390" cy="32" r="2"/>
+    <circle cx="420" cy="48" r="2.5"/>
+    <circle cx="338" cy="52" r="2"/>
+    <circle cx="362" cy="52" r="2"/>
+  </g>
+  <!-- Constellation lines -->
+  <g stroke="#E8CC6B" stroke-opacity="0.35" stroke-width="0.8">
+    <line x1="280" y1="48" x2="310" y2="32"/>
+    <line x1="310" y1="32" x2="350" y2="26"/>
+    <line x1="350" y1="26" x2="390" y2="32"/>
+    <line x1="390" y1="32" x2="420" y2="48"/>
+    <line x1="350" y1="26" x2="338" y2="52"/>
+    <line x1="350" y1="26" x2="362" y2="52"/>
+  </g>
+</g>
+
+<!-- OUTER CIRCLE FRAME (Greek key border ring) -->
+<circle cx="350" cy="305" r="240" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.18"/>
+<circle cx="350" cy="305" r="244" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.12"/>
+
+<!-- GREEK ARCH (top, architectural frame) -->
+<path d="M 155,580 L 155,340 Q 155,140 350,128 Q 545,140 545,340 L 545,580"
+      fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.28"/>
+<!-- Arch keystone -->
+<polygon points="343,128 350,118 357,128" fill="#D4AF37" fill-opacity="0.45"/>
+<!-- Arch column bases -->
+<rect x="142" y="572" width="26" height="12" rx="2" fill="#94A3B8" fill-opacity="0.3"/>
+<rect x="532" y="572" width="26" height="12" rx="2" fill="#94A3B8" fill-opacity="0.3"/>
+<!-- Column shafts (light, flanking) -->
+<rect x="148" y="342" width="14" height="232" fill="#94A3B8" fill-opacity="0.2"/>
+<rect x="538" y="342" width="14" height="232" fill="#94A3B8" fill-opacity="0.2"/>
+<!-- Column capitals -->
+<rect x="144" y="338" width="22" height="7" fill="#94A3B8" fill-opacity="0.28"/>
+<rect x="534" y="338" width="22" height="7" fill="#94A3B8" fill-opacity="0.28"/>
+
+<!-- GROUND -->
+<line x1="100" y1="582" x2="600" y2="582" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.25"/>
+<rect x="100" y="582" width="500" height="8" rx="1" fill="#94A3B8" fill-opacity="0.15"/>
+
+<!-- ============================================================
+     LARGE CENTRAL BOOK
+============================================================ -->
+<g transform="translate(350,295) rotate(-4)">
+  <!-- Book shadow -->
+  <ellipse cx="4" cy="128" rx="100" ry="12" fill="#0F172A" fill-opacity="0.12"/>
+  <!-- Left page -->
+  <path d="M 0,-112 Q -8,-108 -96,-102 L -96,116 Q -8,110 0,114 Z" fill="url(#bkL)"/>
+  <!-- Right page -->
+  <path d="M 0,-112 Q 8,-108 96,-102 L 96,116 Q 8,110 0,114 Z" fill="#EDD9A0" fill-opacity="0.9"/>
+  <!-- Page shadow (center spine) -->
+  <path d="M 0,-112 Q -4,0 0,114" stroke="#B8960E" stroke-width="2" fill="none" stroke-opacity="0.5"/>
+  <!-- Text lines LEFT page -->
+  <g stroke="#B8960E" stroke-opacity="0.38" stroke-width="1" fill="none">
+    <line x1="-85" y1="-85" x2="-12" y2="-87"/>
+    <line x1="-86" y1="-72" x2="-12" y2="-75"/>
+    <line x1="-86" y1="-59" x2="-12" y2="-62"/>
+    <line x1="-86" y1="-46" x2="-12" y2="-49"/>
+    <line x1="-86" y1="-33" x2="-12" y2="-36"/>
+    <line x1="-86" y1="-20" x2="-12" y2="-23"/>
+    <line x1="-86" y1="-7" x2="-12" y2="-10"/>
+    <line x1="-86" y1="6" x2="-12" y2="3"/>
+    <line x1="-86" y1="19" x2="-12" y2="16"/>
+    <line x1="-86" y1="32" x2="-12" y2="29"/>
+    <line x1="-86" y1="45" x2="-12" y2="42"/>
+    <line x1="-86" y1="58" x2="-12" y2="55"/>
+    <line x1="-86" y1="71" x2="-60" y2="69"/>
+  </g>
+  <!-- Text lines RIGHT page -->
+  <g stroke="#B8960E" stroke-opacity="0.35" stroke-width="1" fill="none">
+    <line x1="12" y1="-87" x2="86" y2="-85"/>
+    <line x1="12" y1="-74" x2="86" y2="-72"/>
+    <line x1="12" y1="-61" x2="86" y2="-59"/>
+    <line x1="12" y1="-48" x2="86" y2="-46"/>
+    <line x1="12" y1="-35" x2="86" y2="-33"/>
+    <line x1="12" y1="-22" x2="86" y2="-20"/>
+    <line x1="12" y1="-9" x2="86" y2="-7"/>
+    <line x1="12" y1="4" x2="86" y2="6"/>
+    <line x1="12" y1="17" x2="86" y2="19"/>
+    <line x1="12" y1="30" x2="86" y2="32"/>
+    <line x1="12" y1="43" x2="86" y2="45"/>
+    <line x1="12" y1="56" x2="86" y2="58"/>
+    <line x1="12" y1="69" x2="60" y2="71"/>
+  </g>
+  <!-- Decorative illuminated letter (top left) -->
+  <rect x="-92" y="-95" width="18" height="18" rx="2" fill="#D4AF37" fill-opacity="0.28"/>
+  <text x="-83" y="-80" font-size="12" fill="#D4AF37" fill-opacity="0.55" font-family="serif" text-anchor="middle">Α</text>
+  <!-- Decorative illuminated letter right -->
+  <rect x="74" y="-95" width="18" height="18" rx="2" fill="#D4AF37" fill-opacity="0.22"/>
+  <text x="83" y="-80" font-size="12" fill="#D4AF37" fill-opacity="0.45" font-family="serif" text-anchor="middle">Ω</text>
+  <!-- Book cover (spine visible) -->
+  <rect x="-3" y="-114" width="6" height="228" fill="#B8960E" fill-opacity="0.55" rx="1"/>
+  <!-- Cover border (bottom) -->
+  <path d="M -96,116 Q 0,122 96,116 L 96,124 Q 0,130 -96,124 Z" fill="#B8960E" fill-opacity="0.35"/>
+</g>
+
+<!-- ============================================================
+     SCROLLS (arranged around the book)
+============================================================ -->
+
+<!-- Scroll LEFT (large, open) -->
+<g transform="translate(148,280)">
+  <!-- Scroll body -->
+  <rect x="0" y="0" width="72" height="90" rx="4" fill="url(#scroll1)"/>
+  <!-- Rolled top -->
+  <ellipse cx="36" cy="0" rx="36" ry="12" fill="#EDD9A0" fill-opacity="0.88"/>
+  <ellipse cx="36" cy="0" rx="28" ry="8" fill="#F0DFB8" fill-opacity="0.6"/>
+  <!-- Rolled bottom -->
+  <ellipse cx="36" cy="90" rx="36" ry="12" fill="#EDD9A0" fill-opacity="0.88"/>
+  <ellipse cx="36" cy="90" rx="28" ry="8" fill="#F0DFB8" fill-opacity="0.6"/>
+  <!-- Text lines -->
+  <g stroke="#B8960E" stroke-opacity="0.38" stroke-width="0.8">
+    <line x1="10" y1="18" x2="62" y2="18"/>
+    <line x1="10" y1="26" x2="62" y2="26"/>
+    <line x1="10" y1="34" x2="62" y2="34"/>
+    <line x1="10" y1="42" x2="62" y2="42"/>
+    <line x1="10" y1="50" x2="62" y2="50"/>
+    <line x1="10" y1="58" x2="62" y2="58"/>
+    <line x1="10" y1="66" x2="55" y2="66"/>
+    <line x1="10" y1="74" x2="62" y2="74"/>
+  </g>
+  <!-- Cord tying scroll (decorative) -->
+  <line x1="0" y1="45" x2="72" y2="45" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.45"/>
+</g>
+
+<!-- Scroll RIGHT (rolled closed) -->
+<g transform="translate(484,275)">
+  <ellipse cx="8" cy="50" rx="8" ry="50" fill="#EDD9A0" fill-opacity="0.82"/>
+  <rect x="8" y="0" width="54" height="100" fill="url(#scroll1)"/>
+  <ellipse cx="62" cy="50" rx="8" ry="50" fill="#EDD9A0" fill-opacity="0.82"/>
+  <!-- Ribbon/cord -->
+  <line x1="8" y1="50" x2="62" y2="50" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Lines on scroll -->
+  <g stroke="#B8960E" stroke-opacity="0.3" stroke-width="0.8">
+    <line x1="14" y1="22" x2="56" y2="22"/>
+    <line x1="14" y1="30" x2="56" y2="30"/>
+    <line x1="14" y1="38" x2="56" y2="38"/>
+    <line x1="14" y1="58" x2="56" y2="58"/>
+    <line x1="14" y1="66" x2="56" y2="66"/>
+    <line x1="14" y1="74" x2="56" y2="74"/>
+  </g>
+</g>
+
+<!-- Scroll TOP LEFT (small, angled) -->
+<g transform="translate(192,165) rotate(-18)">
+  <rect x="0" y="0" width="80" height="14" rx="7" fill="#F0DFB8" fill-opacity="0.78"/>
+  <ellipse cx="7" cy="7" rx="7" ry="7" fill="#EDD9A0" fill-opacity="0.72"/>
+  <ellipse cx="73" cy="7" rx="7" ry="7" fill="#EDD9A0" fill-opacity="0.72"/>
+  <line x1="14" y1="5" x2="66" y2="5" stroke="#B8960E" stroke-width="0.7" stroke-opacity="0.4"/>
+  <line x1="14" y1="9" x2="66" y2="9" stroke="#B8960E" stroke-width="0.7" stroke-opacity="0.4"/>
+</g>
+
+<!-- Scroll TOP RIGHT (small, angled) -->
+<g transform="translate(450,160) rotate(15)">
+  <rect x="0" y="0" width="80" height="14" rx="7" fill="#F0DFB8" fill-opacity="0.78"/>
+  <ellipse cx="7" cy="7" rx="7" ry="7" fill="#EDD9A0" fill-opacity="0.72"/>
+  <ellipse cx="73" cy="7" rx="7" ry="7" fill="#EDD9A0" fill-opacity="0.72"/>
+  <line x1="14" y1="5" x2="66" y2="5" stroke="#B8960E" stroke-width="0.7" stroke-opacity="0.4"/>
+  <line x1="14" y1="9" x2="66" y2="9" stroke="#B8960E" stroke-width="0.7" stroke-opacity="0.4"/>
+</g>
+
+<!-- ============================================================
+     OWL (top center, perched on arch keystone)
+============================================================ -->
+<g transform="translate(318,95)">
+  <!-- Owl body -->
+  <ellipse cx="32" cy="55" rx="20" ry="26" fill="#3D5226" fill-opacity="0.72"/>
+  <!-- Owl head -->
+  <circle cx="32" cy="30" r="20" fill="#4A6035" fill-opacity="0.78"/>
+  <!-- Facial disc -->
+  <ellipse cx="32" cy="31" rx="14" ry="13" fill="#2A3E18" fill-opacity="0.42"/>
+  <!-- Eyes -->
+  <circle cx="24" cy="28" r="7" fill="#0F172A" fill-opacity="0.85"/>
+  <circle cx="40" cy="28" r="7" fill="#0F172A" fill-opacity="0.85"/>
+  <circle cx="24" cy="28" r="4.5" fill="#D4AF37" fill-opacity="0.72"/>
+  <circle cx="40" cy="28" r="4.5" fill="#D4AF37" fill-opacity="0.72"/>
+  <circle cx="24" cy="28" r="2" fill="#0F172A"/>
+  <circle cx="40" cy="28" r="2" fill="#0F172A"/>
+  <circle cx="24.8" cy="27" r="1" fill="white" fill-opacity="0.7"/>
+  <circle cx="40.8" cy="27" r="1" fill="white" fill-opacity="0.7"/>
+  <!-- Beak -->
+  <polygon points="29,35 35,35 32,40" fill="#D4AF37" fill-opacity="0.75"/>
+  <!-- Ear tufts -->
+  <path d="M 20,14 Q 18,8 21,5" stroke="#3D5226" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 44,14 Q 46,8 43,5" stroke="#3D5226" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Wing patterns -->
+  <path d="M 12,58 Q 6,66 10,78 Q 16,86 24,84" stroke="#3D5226" stroke-width="6" stroke-linecap="round" fill="none" stroke-opacity="0.65"/>
+  <path d="M 52,58 Q 58,66 54,78 Q 48,86 40,84" stroke="#3D5226" stroke-width="6" stroke-linecap="round" fill="none" stroke-opacity="0.65"/>
+  <!-- Talons -->
+  <path d="M 22,81 L 16,90" stroke="#4A6035" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 28,83 L 26,92" stroke="#4A6035" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 32,83 L 32,92" stroke="#4A6035" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 36,83 L 38,92" stroke="#4A6035" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 42,81 L 48,90" stroke="#4A6035" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<!-- ============================================================
+     OLIVE BRANCHES (flanking the composition)
+============================================================ -->
+
+<!-- Left olive branch (sweeping up-left) -->
+<g opacity="0.62">
+  <path d="M 200,540 Q 170,500 148,455 Q 128,410 118,360 Q 110,318 108,272" stroke="#556B2F" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Leaves left side of stem -->
+  <g fill="#6B8A3E" fill-opacity="0.78">
+    <ellipse cx="195" cy="528" rx="9" ry="4.5" transform="rotate(20,195,528)"/>
+    <ellipse cx="162" cy="490" rx="9" ry="4.5" transform="rotate(35,162,490)"/>
+    <ellipse cx="142" cy="454" rx="9" ry="4.5" transform="rotate(45,142,454)"/>
+    <ellipse cx="126" cy="415" rx="9" ry="4.5" transform="rotate(50,126,415)"/>
+    <ellipse cx="116" cy="374" rx="9" ry="4.5" transform="rotate(55,116,374)"/>
+    <ellipse cx="110" cy="330" rx="9" ry="4.5" transform="rotate(58,110,330)"/>
+  </g>
+  <!-- Leaves right side of stem -->
+  <g fill="#7A9442" fill-opacity="0.68">
+    <ellipse cx="180" cy="516" rx="9" ry="4.5" transform="rotate(-15,180,516)"/>
+    <ellipse cx="152" cy="476" rx="9" ry="4.5" transform="rotate(-25,152,476)"/>
+    <ellipse cx="133" cy="435" rx="9" ry="4.5" transform="rotate(-32,133,435)"/>
+    <ellipse cx="120" cy="394" rx="9" ry="4.5" transform="rotate(-38,120,394)"/>
+    <ellipse cx="112" cy="352" rx="9" ry="4.5" transform="rotate(-42,112,352)"/>
+  </g>
+  <!-- Small olive fruits -->
+  <g fill="#556B2F" fill-opacity="0.55">
+    <circle cx="148" cy="458" r="4"/>
+    <circle cx="126" cy="418" r="3.5"/>
+    <circle cx="113" cy="376" r="3.5"/>
+  </g>
+</g>
+
+<!-- Right olive branch (mirrored) -->
+<g opacity="0.62" transform="translate(700,0) scale(-1,1)">
+  <path d="M 200,540 Q 170,500 148,455 Q 128,410 118,360 Q 110,318 108,272" stroke="#556B2F" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <g fill="#6B8A3E" fill-opacity="0.78">
+    <ellipse cx="195" cy="528" rx="9" ry="4.5" transform="rotate(20,195,528)"/>
+    <ellipse cx="162" cy="490" rx="9" ry="4.5" transform="rotate(35,162,490)"/>
+    <ellipse cx="142" cy="454" rx="9" ry="4.5" transform="rotate(45,142,454)"/>
+    <ellipse cx="126" cy="415" rx="9" ry="4.5" transform="rotate(50,126,415)"/>
+    <ellipse cx="116" cy="374" rx="9" ry="4.5" transform="rotate(55,116,374)"/>
+    <ellipse cx="110" cy="330" rx="9" ry="4.5" transform="rotate(58,110,330)"/>
+  </g>
+  <g fill="#7A9442" fill-opacity="0.68">
+    <ellipse cx="180" cy="516" rx="9" ry="4.5" transform="rotate(-15,180,516)"/>
+    <ellipse cx="152" cy="476" rx="9" ry="4.5" transform="rotate(-25,152,476)"/>
+    <ellipse cx="133" cy="435" rx="9" ry="4.5" transform="rotate(-32,133,435)"/>
+    <ellipse cx="120" cy="394" rx="9" ry="4.5" transform="rotate(-38,120,394)"/>
+    <ellipse cx="112" cy="352" rx="9" ry="4.5" transform="rotate(-42,112,352)"/>
+  </g>
+  <g fill="#556B2F" fill-opacity="0.55">
+    <circle cx="148" cy="458" r="4"/>
+    <circle cx="126" cy="418" r="3.5"/>
+    <circle cx="113" cy="376" r="3.5"/>
+  </g>
+</g>
+
+<!-- ============================================================
+     GEOMETRIC GREEK PATTERN ELEMENTS
+============================================================ -->
+
+<!-- Meander border (bottom) -->
+<g transform="translate(0,560)" opacity="0.3">
+  <line x1="50" y1="15" x2="650" y2="15" stroke="#D4AF37" stroke-width="0.8"/>
+  <!-- Greek key repeating -->
+  <g fill="none" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.7">
+    <path d="M 100,5 H114 V15 H106 V10 H118 V22 H100 V5 Z"/>
+    <path d="M 128,5 H142 V15 H134 V10 H146 V22 H128 V5 Z"/>
+    <path d="M 156,5 H170 V15 H162 V10 H174 V22 H156 V5 Z"/>
+    <path d="M 520,5 H534 V15 H526 V10 H538 V22 H520 V5 Z"/>
+    <path d="M 548,5 H562 V15 H554 V10 H566 V22 H548 V5 Z"/>
+    <path d="M 576,5 H590 V15 H582 V10 H594 V22 H576 V5 Z"/>
+  </g>
+  <!-- Center diamond -->
+  <polygon points="350,6 356,14 350,22 344,14" fill="#D4AF37" fill-opacity="0.5"/>
+</g>
+
+<!-- Geometric circle pattern (behind book, subtle) -->
+<g opacity="0.14" stroke="#D4AF37" fill="none">
+  <circle cx="350" cy="300" r="120" stroke-width="0.8"/>
+  <circle cx="350" cy="300" r="140" stroke-width="0.5"/>
+  <!-- Radial dividers -->
+  <line x1="350" y1="160" x2="350" y2="440" stroke-width="0.5"/>
+  <line x1="210" y1="300" x2="490" y2="300" stroke-width="0.5"/>
+  <line x1="251" y1="201" x2="449" y2="399" stroke-width="0.5"/>
+  <line x1="449" y1="201" x2="251" y2="399" stroke-width="0.5"/>
+</g>
+
+<!-- Gold corner ornaments -->
+<g fill="#D4AF37" fill-opacity="0.35">
+  <!-- Top left -->
+  <path d="M 40,40 L 40,70 M 40,40 L 70,40" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-opacity="0.4"/>
+  <circle cx="40" cy="40" r="3"/>
+  <!-- Top right -->
+  <path d="M 660,40 L 660,70 M 660,40 L 630,40" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-opacity="0.4"/>
+  <circle cx="660" cy="40" r="3"/>
+  <!-- Bottom left -->
+  <path d="M 40,560 L 40,530 M 40,560 L 70,560" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-opacity="0.4"/>
+  <circle cx="40" cy="560" r="3"/>
+  <!-- Bottom right -->
+  <path d="M 660,560 L 660,530 M 660,560 L 630,560" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-opacity="0.4"/>
+  <circle cx="660" cy="560" r="3"/>
+</g>
+
+<!-- TORCH (bottom right, leaning) -->
+<g transform="translate(550,440) rotate(18)">
+  <!-- Handle -->
+  <rect x="-5" y="20" width="10" height="88" rx="3" fill="#B8960E" fill-opacity="0.72"/>
+  <!-- Torch bowl -->
+  <path d="M -14,20 Q -16,8 -8,2 Q 0,-4 8,2 Q 16,8 14,20 Z" fill="#8B6914" fill-opacity="0.75"/>
+  <!-- Flame outer -->
+  <path d="M -12,18 Q -22,-10 -8,-32 Q 0,-48 8,-32 Q 22,-10 12,18 Z" fill="#D4AF37" fill-opacity="0.7"/>
+  <!-- Flame middle -->
+  <path d="M -7,16 Q -14,-8 -4,-26 Q 0,-36 4,-26 Q 14,-8 7,16 Z" fill="#E8CC6B" fill-opacity="0.8"/>
+  <!-- Flame core -->
+  <path d="M -3,14 Q -6,-4 0,-16 Q 6,-4 3,14 Z" fill="#F5EAC8" fill-opacity="0.85"/>
+  <!-- Flame glow -->
+  <ellipse cx="0" cy="-10" rx="20" ry="24" fill="#D4AF37" fill-opacity="0.1"/>
+</g>
+
+<!-- Torch glow -->
+<ellipse cx="558" cy="416" rx="30" ry="35" fill="#D4AF37" fill-opacity="0.07"/>
+
+<!-- INK POT & REED PEN (bottom left) -->
+<g transform="translate(108,490)">
+  <!-- Ink pot (small jar) -->
+  <path d="M 5,35 Q 2,28 2,22 Q 2,12 14,10 Q 26,12 26,22 Q 26,28 23,35 Z" fill="#1E293B" fill-opacity="0.55" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.35"/>
+  <!-- Jar neck -->
+  <rect x="8" y="6" width="12" height="6" rx="2" fill="#1E293B" fill-opacity="0.6"/>
+  <!-- Jar rim -->
+  <rect x="6" y="4" width="16" height="4" rx="2" fill="#D4AF37" fill-opacity="0.4"/>
+  <!-- Reed pen -->
+  <path d="M 22,8 L 52,-28" stroke="#EDD9A0" stroke-width="3" stroke-linecap="round" stroke-opacity="0.8"/>
+  <!-- Pen nib -->
+  <polygon points="50,-26 54,-30 56,-22" fill="#D4AF37" fill-opacity="0.7"/>
+  <!-- Pen feather -->
+  <path d="M 22,8 Q 30,-2 40,-14" stroke="#EDD9A0" stroke-width="6" stroke-linecap="round" fill="none" stroke-opacity="0.3"/>
+</g>
+
+<!-- STAR of Bethlehem / 8-pointed star (top center, large, subtle) -->
+<g transform="translate(350,65)" opacity="0.25">
+  <g stroke="#D4AF37" fill="none" stroke-width="0.8">
+    <line x1="0" y1="-22" x2="0" y2="22"/>
+    <line x1="-22" y1="0" x2="22" y2="0"/>
+    <line x1="-16" y1="-16" x2="16" y2="16"/>
+    <line x1="16" y1="-16" x2="-16" y2="16"/>
+  </g>
+  <circle cx="0" cy="0" r="5" fill="#D4AF37" fill-opacity="0.55"/>
+  <circle cx="0" cy="0" r="2" fill="#E8CC6B" fill-opacity="0.8"/>
+</g>
+
+<!-- Center diamond accent under book -->
+<g transform="translate(350,420)" opacity="0.35">
+  <polygon points="0,-8 8,0 0,8 -8,0" fill="#D4AF37" fill-opacity="0.5"/>
+  <line x1="-50" y1="0" x2="-14" y2="0" stroke="#D4AF37" stroke-width="0.7"/>
+  <line x1="14" y1="0" x2="50" y2="0" stroke="#D4AF37" stroke-width="0.7"/>
+</g>
+
+</svg>

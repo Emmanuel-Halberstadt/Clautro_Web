@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720">
+<defs>
+  <radialGradient id="halo" cx="50%" cy="40%" r="50%">
+    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow2" cx="50%" cy="70%" r="60%">
+    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.1"/>
+    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="spear" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#E8CC6B" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#B8960E" stop-opacity="0.7"/>
+  </linearGradient>
+</defs>
+
+<!-- Halo glow around figure -->
+<ellipse cx="300" cy="290" rx="220" ry="280" fill="url(#halo)"/>
+<!-- Ground glow -->
+<ellipse cx="300" cy="640" rx="200" ry="80" fill="url(#glow2)"/>
+
+<!-- Stars background -->
+<g fill="#E8CC6B" opacity="0.55">
+  <circle cx="28" cy="30" r="1.5"/><circle cx="72" cy="12" r="1"/>
+  <circle cx="118" cy="48" r="2"/><circle cx="165" cy="18" r="1.5"/>
+  <circle cx="220" cy="38" r="1"/><circle cx="280" cy="8" r="1.5"/>
+  <circle cx="320" cy="22" r="1"/><circle cx="380" cy="10" r="1.5"/>
+  <circle cx="435" cy="40" r="2"/><circle cx="482" cy="15" r="1"/>
+  <circle cx="528" cy="35" r="1.5"/><circle cx="572" cy="8" r="1"/>
+  <circle cx="45" cy="95" r="1"/><circle cx="140" cy="110" r="1.5"/>
+  <circle cx="460" cy="100" r="1"/><circle cx="555" cy="90" r="1.5"/>
+  <circle cx="88" cy="165" r="1"/><circle cx="512" cy="155" r="1"/>
+</g>
+
+<!-- Background columns (flanking, subtle) -->
+<g opacity="0.28">
+  <!-- Left column -->
+  <rect x="28" y="150" width="22" height="420" fill="#94A3B8" fill-opacity="0.4"/>
+  <rect x="22" y="146" width="34" height="8" fill="#94A3B8" fill-opacity="0.45"/>
+  <rect x="20" y="568" width="38" height="6" fill="#94A3B8" fill-opacity="0.35"/>
+  <!-- Right column -->
+  <rect x="550" y="150" width="22" height="420" fill="#94A3B8" fill-opacity="0.4"/>
+  <rect x="544" y="146" width="34" height="8" fill="#94A3B8" fill-opacity="0.45"/>
+  <rect x="542" y="568" width="38" height="6" fill="#94A3B8" fill-opacity="0.35"/>
+</g>
+
+<!-- Arch / temple frame (background) -->
+<path d="M 80,600 L 80,300 Q 80,140 300,120 Q 520,140 520,300 L 520,600"
+      fill="none" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.22"/>
+
+<!-- Ground line -->
+<line x1="60" y1="640" x2="540" y2="640" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.28"/>
+<!-- Ground step -->
+<rect x="100" y="640" width="400" height="8" rx="1" fill="#94A3B8" fill-opacity="0.18"/>
+<rect x="80" y="648" width="440" height="6" rx="1" fill="#94A3B8" fill-opacity="0.14"/>
+
+<!-- ===== SPEAR ===== -->
+<!-- Spear shaft -->
+<rect x="370" y="120" width="6" height="490" rx="3" fill="url(#spear)" fill-opacity="0.85"/>
+<!-- Spear tip (triangular blade) -->
+<polygon points="367,120 373,120 370,72" fill="#E8CC6B" fill-opacity="0.9"/>
+<polygon points="367,122 373,122 375,140 365,140" fill="#B8960E" fill-opacity="0.6"/>
+<!-- Spear butt end -->
+<ellipse cx="373" cy="612" rx="4" ry="6" fill="#B8960E" fill-opacity="0.7"/>
+
+<!-- ===== SHIELD (leaning against body) ===== -->
+<!-- Shield body (round, Aspis) -->
+<ellipse cx="218" cy="430" rx="78" ry="88" fill="#1E3A5F" fill-opacity="0.65" stroke="#D4AF37" stroke-width="1.8" stroke-opacity="0.5"/>
+<!-- Shield inner ring -->
+<ellipse cx="218" cy="430" rx="62" ry="72" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.35"/>
+<!-- Shield boss (central protrusion) -->
+<ellipse cx="218" cy="430" rx="20" ry="20" fill="#0F172A" fill-opacity="0.5" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.5"/>
+<ellipse cx="218" cy="430" rx="12" ry="12" fill="#D4AF37" fill-opacity="0.28"/>
+<!-- Shield decorative: simplified Gorgon/spiral motif -->
+<g stroke="#D4AF37" stroke-opacity="0.3" fill="none" stroke-width="0.8">
+  <path d="M 218,405 Q 240,412 244,430 Q 240,448 218,455 Q 196,448 192,430 Q 196,412 218,405 Z"/>
+  <!-- Radiating lines -->
+  <line x1="218" y1="370" x2="218" y2="385"/>
+  <line x1="255" y1="382" x2="245" y2="393"/>
+  <line x1="270" y1="415" x2="255" y2="418"/>
+  <line x1="255" y1="478" x2="245" y2="468"/>
+  <line x1="218" y1="492" x2="218" y2="476"/>
+  <line x1="181" y1="478" x2="191" y2="468"/>
+  <line x1="166" y1="445" x2="181" y2="442"/>
+  <line x1="181" y1="382" x2="191" y2="393"/>
+</g>
+
+<!-- ===== ATHENA FIGURE ===== -->
+<!-- Main robe/peplos (long flowing) -->
+<path d="M 270,310 C 265,360 260,420 258,490 Q 255,550 260,638 L 356,638 Q 352,550 348,490 Q 346,420 342,360 L 340,310 Z" fill="#F0DFB8" fill-opacity="0.88"/>
+<!-- Robe folds (elegant vertical) -->
+<line x1="278" y1="314" x2="270" y2="636" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.22"/>
+<line x1="292" y1="316" x2="287" y2="636" stroke="#D4AF37" stroke-width="0.7" stroke-opacity="0.18"/>
+<line x1="306" y1="316" x2="304" y2="636" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.2"/>
+<line x1="320" y1="316" x2="322" y2="636" stroke="#D4AF37" stroke-width="0.7" stroke-opacity="0.18"/>
+<line x1="334" y1="316" x2="338" y2="636" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.22"/>
+<!-- Overfold (apoptygma) at chest -->
+<path d="M 265,314 L 258,380 L 350,380 L 344,314 Z" fill="#EDD9A0" fill-opacity="0.6"/>
+<line x1="272" y1="316" x2="268" y2="380" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.25"/>
+<line x1="298" y1="316" x2="296" y2="380" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.25"/>
+<line x1="325" y1="316" x2="328" y2="380" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.25"/>
+<!-- Belt / zone -->
+<rect x="260" y="378" width="92" height="8" rx="4" fill="#D4AF37" fill-opacity="0.45"/>
+<!-- Belt buckle detail -->
+<rect x="300" y="376" width="12" height="12" rx="2" fill="#D4AF37" fill-opacity="0.65"/>
+
+<!-- Aegis (divine breastplate) over chest -->
+<path d="M 262,318 Q 265,308 306,305 Q 348,308 350,318 L 348,378 L 264,378 Z" fill="#1E3A5F" fill-opacity="0.35" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.4"/>
+<!-- Scale pattern on aegis (subtle) -->
+<g stroke="#D4AF37" stroke-opacity="0.18" fill="none" stroke-width="0.6">
+  <path d="M 275,325 Q 282,320 290,325 Q 282,330 275,325 Z"/>
+  <path d="M 290,325 Q 297,320 305,325 Q 297,330 290,325 Z"/>
+  <path d="M 305,325 Q 312,320 320,325 Q 312,330 305,325 Z"/>
+  <path d="M 280,338 Q 287,333 295,338 Q 287,343 280,338 Z"/>
+  <path d="M 295,338 Q 302,333 310,338 Q 302,343 295,338 Z"/>
+  <path d="M 280,350 Q 287,345 295,350 Q 287,355 280,350 Z"/>
+  <path d="M 295,350 Q 302,345 310,350 Q 302,355 295,350 Z"/>
+</g>
+
+<!-- Left arm (holding spear, slight extension) -->
+<path d="M 341,316 C 352,322 360,336 362,365" stroke="#EDD9A0" stroke-width="16" stroke-linecap="round" fill="none" stroke-opacity="0.82"/>
+<!-- Right arm (holding shield edge) -->
+<path d="M 268,316 C 256,328 248,355 244,390" stroke="#EDD9A0" stroke-width="15" stroke-linecap="round" fill="none" stroke-opacity="0.78"/>
+
+<!-- Neck -->
+<rect x="293" y="264" width="14" height="24" rx="5" fill="#E8C99A" fill-opacity="0.85"/>
+
+<!-- ===== HEAD ===== -->
+<circle cx="300" cy="242" r="46" fill="#E8C99A"/>
+
+<!-- Hair (visible below helmet, soft waves) -->
+<path d="M 258,265 Q 254,278 260,290 Q 265,300 272,304" stroke="#3D5226" stroke-width="4" stroke-linecap="round" fill="none" stroke-opacity="0.75"/>
+<path d="M 342,265 Q 346,278 340,290 Q 335,300 328,304" stroke="#3D5226" stroke-width="4" stroke-linecap="round" fill="none" stroke-opacity="0.75"/>
+
+<!-- ===== CORINTHIAN HELMET ===== -->
+<!-- Helmet bowl -->
+<path d="M 252,252 Q 248,220 268,200 Q 282,184 300,182 Q 318,184 332,200 Q 352,220 348,252 Z" fill="#4A6B8A" fill-opacity="0.85"/>
+<!-- Helmet bowl highlight -->
+<path d="M 258,248 Q 255,225 272,208 Q 284,196 300,195" stroke="#94A3B8" stroke-width="1.2" fill="none" stroke-opacity="0.45"/>
+<!-- Helmet cheek guards -->
+<path d="M 253,254 Q 248,265 250,280 Q 252,292 260,296 Q 254,282 256,270 Z" fill="#3A5570" fill-opacity="0.8"/>
+<path d="M 347,254 Q 352,265 350,280 Q 348,292 340,296 Q 346,282 344,270 Z" fill="#3A5570" fill-opacity="0.8"/>
+<!-- Nose guard (nasal) -->
+<rect x="296" y="240" width="8" height="30" rx="3" fill="#3A5570" fill-opacity="0.75"/>
+<!-- Helmet crest (horsehair plume) -->
+<!-- Crest base ridge -->
+<path d="M 268,198 Q 300,192 332,198" stroke="#6B8A3E" stroke-width="6" stroke-linecap="round" fill="none"/>
+<!-- Plume feathers -->
+<g stroke="#6B8A3E" stroke-opacity="0.78" fill="none">
+  <path d="M 268,198 Q 264,170 270,140 Q 274,120 278,100" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 276,196 Q 274,165 280,136 Q 284,115 288,95" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 285,193 Q 284,162 290,133 Q 294,112 296,92" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 300,192 Q 300,160 300,130 Q 300,108 300,88" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 315,193 Q 316,162 310,133 Q 306,112 304,92" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 324,196 Q 326,165 320,136 Q 316,115 312,95" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 332,198 Q 336,170 330,140 Q 326,120 322,100" stroke-width="4" stroke-linecap="round"/>
+</g>
+<!-- Plume tips glow (gold) -->
+<g fill="#D4AF37" fill-opacity="0.5">
+  <circle cx="275" cy="100" r="3.5"/>
+  <circle cx="285" cy="92" r="3.5"/>
+  <circle cx="293" cy="90" r="3.5"/>
+  <circle cx="300" cy="87" r="4"/>
+  <circle cx="307" cy="90" r="3.5"/>
+  <circle cx="315" cy="92" r="3.5"/>
+  <circle cx="325" cy="100" r="3.5"/>
+</g>
+<!-- Helmet decorative band -->
+<line x1="252" y1="254" x2="348" y2="254" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.4"/>
+<!-- Eye visible (slight) -->
+<ellipse cx="269" cy="258" rx="4.5" ry="3.5" fill="#1E293B" fill-opacity="0.55"/>
+<circle cx="270" cy="258" r="1.8" fill="#0F172A"/>
+<ellipse cx="331" cy="258" rx="4.5" ry="3.5" fill="#1E293B" fill-opacity="0.55"/>
+<circle cx="330" cy="258" r="1.8" fill="#0F172A"/>
+<!-- Helmet nose guard shadow -->
+<path d="M 296,270 Q 300,276 304,270" stroke="#3A5570" stroke-width="1" fill="none" stroke-opacity="0.5"/>
+<!-- Lips subtle -->
+<path d="M 292,284 Q 300,289 308,284" stroke="#C4A37A" stroke-width="1.5" fill="none" stroke-opacity="0.5"/>
+
+<!-- ===== OWL (perched, right side) ===== -->
+<g transform="translate(388,510)">
+  <!-- Owl body -->
+  <ellipse cx="36" cy="48" rx="26" ry="32" fill="#3D5226" fill-opacity="0.7"/>
+  <!-- Owl head (round) -->
+  <circle cx="36" cy="22" r="24" fill="#4A6035" fill-opacity="0.75"/>
+  <!-- Facial disc (flat face) -->
+  <ellipse cx="36" cy="24" rx="18" ry="16" fill="#2A3E18" fill-opacity="0.45"/>
+  <!-- Eyes (large, round - owl characteristic) -->
+  <circle cx="27" cy="22" r="8" fill="#0F172A" fill-opacity="0.85"/>
+  <circle cx="45" cy="22" r="8" fill="#0F172A" fill-opacity="0.85"/>
+  <circle cx="27" cy="22" r="5" fill="#D4AF37" fill-opacity="0.7"/>
+  <circle cx="45" cy="22" r="5" fill="#D4AF37" fill-opacity="0.7"/>
+  <circle cx="27" cy="22" r="2.5" fill="#0F172A"/>
+  <circle cx="45" cy="22" r="2.5" fill="#0F172A"/>
+  <!-- Eye gleam -->
+  <circle cx="28.5" cy="20.5" r="1.2" fill="white" fill-opacity="0.7"/>
+  <circle cx="46.5" cy="20.5" r="1.2" fill="white" fill-opacity="0.7"/>
+  <!-- Beak -->
+  <polygon points="33,29 39,29 36,35" fill="#D4AF37" fill-opacity="0.75"/>
+  <!-- Ear tufts -->
+  <path d="M 22,8 Q 20,2 24,0" stroke="#3D5226" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 50,8 Q 52,2 48,0" stroke="#3D5226" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Wings (folded) -->
+  <path d="M 10,52 Q 4,60 8,76 Q 16,84 28,82" stroke="#3D5226" stroke-width="8" stroke-linecap="round" fill="none" stroke-opacity="0.68"/>
+  <path d="M 62,52 Q 68,60 64,76 Q 56,84 44,82" stroke="#3D5226" stroke-width="8" stroke-linecap="round" fill="none" stroke-opacity="0.68"/>
+  <!-- Wing feather hint -->
+  <path d="M 10,52 Q 6,62 10,72" stroke="#4A6035" stroke-width="4" stroke-linecap="round" fill="none" stroke-opacity="0.5"/>
+  <path d="M 62,52 Q 66,62 62,72" stroke="#4A6035" stroke-width="4" stroke-linecap="round" fill="none" stroke-opacity="0.5"/>
+  <!-- Talons/feet on branch -->
+  <path d="M 24,80 Q 22,88 18,94" stroke="#3D5226" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 30,82 Q 28,90 26,96" stroke="#3D5226" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 36,82 Q 36,90 36,96" stroke="#3D5226" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 42,82 Q 44,90 46,96" stroke="#3D5226" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 48,80 Q 50,88 54,94" stroke="#3D5226" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Branch -->
+  <path d="M 0,95 Q 36,90 72,95" stroke="#556B2F" stroke-width="4" stroke-linecap="round" fill="none" stroke-opacity="0.55"/>
+  <!-- Olive leaves on branch -->
+  <g fill="#6B8A3E" fill-opacity="0.6">
+    <ellipse cx="8" cy="92" rx="6" ry="2.5" transform="rotate(-20,8,92)"/>
+    <ellipse cx="62" cy="92" rx="6" ry="2.5" transform="rotate(20,62,92)"/>
+  </g>
+</g>
+
+<!-- DECORATIVE: Stars in an arc around Athena -->
+<g fill="#D4AF37" fill-opacity="0.4">
+  <circle cx="145" cy="180" r="2.5"/>
+  <circle cx="128" cy="220" r="2"/>
+  <circle cx="122" cy="265" r="2.5"/>
+  <circle cx="128" cy="310" r="2"/>
+  <circle cx="455" cy="180" r="2.5"/>
+  <circle cx="472" cy="220" r="2"/>
+  <circle cx="478" cy="265" r="2.5"/>
+  <circle cx="472" cy="310" r="2"/>
+</g>
+
+<!-- Connecting star lines (constellation hint) -->
+<g stroke="#D4AF37" stroke-opacity="0.15" stroke-width="0.6">
+  <line x1="145" y1="180" x2="128" y2="220"/>
+  <line x1="128" y1="220" x2="122" y2="265"/>
+  <line x1="455" y1="180" x2="472" y2="220"/>
+  <line x1="472" y1="220" x2="478" y2="265"/>
+</g>
+
+<!-- Greek key border (bottom) -->
+<g transform="translate(0,670)" opacity="0.25">
+  <line x1="40" y1="10" x2="560" y2="10" stroke="#D4AF37" stroke-width="0.7"/>
+  <!-- Meander pattern (simplified) -->
+  <g fill="#D4AF37" fill-opacity="0.5">
+    <polygon points="290,5 295,10 290,15 285,10"/>
+    <polygon points="310,5 315,10 310,15 305,10"/>
+    <polygon points="270,5 275,10 270,15 265,10"/>
+    <polygon points="330,5 335,10 330,15 325,10"/>
+  </g>
+</g>
+
+<!-- Radiant lines from body (subtle divine light) -->
+<g stroke="#D4AF37" stroke-opacity="0.06" stroke-width="30">
+  <line x1="300" y1="120" x2="80" y2="640"/>
+  <line x1="300" y1="120" x2="300" y2="660"/>
+  <line x1="300" y1="120" x2="520" y2="640"/>
+</g>
+
+<!-- Name omega symbol (decorative, bottom center) -->
+<path d="M 280,698 Q 260,680 265,660 Q 272,642 300,642 Q 328,642 335,660 Q 340,680 320,698 L 280,698 Z M 275,698 L 268,698 M 325,698 L 332,698"
+      fill="none" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.35"/>
+
+</svg>

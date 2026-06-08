@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Claustro — Espacios de estudio premium para estudiantes universitarios y profesionales. Concentración, productividad y bienestar en un solo lugar." />
+  <title>CLAUSTRO — Tu espacio para concentrarte</title>
+
+  <!-- Google Fonts: Cinzel (clásico/griego) + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner container">
+      <a href="#" class="navbar__logo" aria-label="Claustro inicio">
+        <img src="Asserts/Logo.png" alt="Claustro" class="navbar__logo-img" />
+        <span class="navbar__logo-text">CLAUSTRO</span>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        <a href="#servicios" class="navbar__link">Servicios</a>
+        <a href="#galeria" class="navbar__link">Espacios</a>
+        <a href="#planes" class="navbar__link">Planes</a>
+        <a href="#contacto" class="navbar__link">Contacto</a>
+      </nav>
+
+      <a href="#planes" class="btn btn--gold navbar__cta">Reservar espacio</a>
+
+      <button class="navbar__burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menú móvil" hidden>
+      <nav class="mobile-menu__nav">
+        <a href="#servicios" class="mobile-menu__link">Servicios</a>
+        <a href="#galeria" class="mobile-menu__link">Espacios</a>
+        <a href="#planes" class="mobile-menu__link">Planes</a>
+        <a href="#contacto" class="mobile-menu__link">Contacto</a>
+        <a href="#planes" class="btn btn--gold mobile-menu__cta">Reservar espacio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="inicio" aria-label="Inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="hero__grid"></div>
+        <!-- Greek column decorations -->
+        <div class="hero__col-deco hero__col-deco--left" aria-hidden="true">
+          <svg viewBox="0 0 80 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="0" width="30" height="10" rx="1" fill="#D4AF37" opacity="0.15"/>
+            <rect x="30" y="10" width="20" height="6" fill="#D4AF37" opacity="0.1"/>
+            <rect x="32" y="16" width="16" height="300" fill="#D4AF37" opacity="0.07"/>
+            <rect x="28" y="316" width="24" height="6" fill="#D4AF37" opacity="0.1"/>
+            <rect x="22" y="322" width="36" height="8" rx="1" fill="#D4AF37" opacity="0.12"/>
+            <rect x="18" y="330" width="44" height="10" rx="1" fill="#D4AF37" opacity="0.08"/>
+            <!-- Capital details -->
+            <path d="M30,10 Q40,14 50,10" stroke="#D4AF37" stroke-width="1" opacity="0.2" fill="none"/>
+            <path d="M29,316 Q40,312 51,316" stroke="#D4AF37" stroke-width="1" opacity="0.2" fill="none"/>
+          </svg>
+        </div>
+        <div class="hero__col-deco hero__col-deco--right" aria-hidden="true">
+          <svg viewBox="0 0 80 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="0" width="30" height="10" rx="1" fill="#D4AF37" opacity="0.15"/>
+            <rect x="30" y="10" width="20" height="6" fill="#D4AF37" opacity="0.1"/>
+            <rect x="32" y="16" width="16" height="300" fill="#D4AF37" opacity="0.07"/>
+            <rect x="28" y="316" width="24" height="6" fill="#D4AF37" opacity="0.1"/>
+            <rect x="22" y="322" width="36" height="8" rx="1" fill="#D4AF37" opacity="0.12"/>
+            <rect x="18" y="330" width="44" height="10" rx="1" fill="#D4AF37" opacity="0.08"/>
+            <path d="M30,10 Q40,14 50,10" stroke="#D4AF37" stroke-width="1" opacity="0.2" fill="none"/>
+            <path d="M29,316 Q40,312 51,316" stroke="#D4AF37" stroke-width="1" opacity="0.2" fill="none"/>
+          </svg>
+        </div>
+        <!-- Greek meander top border -->
+        <div class="hero__meander-top"></div>
+        <div class="hero__meander-bottom"></div>
+      </div>
+
+      <div class="container hero__container">
+        <div class="hero__split">
+          <!-- Left: content -->
+          <div class="hero__content">
+            <div class="hero__badge reveal">
+              <span class="hero__badge-dot" aria-hidden="true"></span>
+              Espacios disponibles ahora
+            </div>
+
+            <h1 class="hero__title reveal reveal--delay-1">
+              <span class="hero__title-line">Tu espacio</span>
+              <span class="hero__title-line hero__title-line--gold">para pensar</span>
+              <span class="hero__title-line">con claridad.</span>
+            </h1>
+
+            <p class="hero__subtitle reveal reveal--delay-2">
+              Claustro ofrece ambientes de estudio premium, silenciosos y equipados para que alcances tu máximo potencial académico y profesional.
+            </p>
+
+            <div class="hero__actions reveal reveal--delay-3">
+              <a href="#planes" class="btn btn--gold btn--lg">
+                Comenzar ahora
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+              <a href="#servicios" class="btn btn--ghost btn--lg">Ver servicios</a>
+            </div>
+
+            <div class="hero__social-proof reveal reveal--delay-4">
+              <div class="hero__avatars" aria-hidden="true">
+                <span class="hero__avatar">ES</span>
+                <span class="hero__avatar">MG</span>
+                <span class="hero__avatar">LR</span>
+                <span class="hero__avatar">AP</span>
+              </div>
+              <p class="hero__social-text">+500 estudiantes ya estudian con nosotros</p>
+            </div>
+          </div>
+
+          <!-- Right: photo -->
+          <div class="hero__image-wrap reveal reveal--delay-2" aria-hidden="false">
+            <div class="hero__image-frame">
+              <img src="Asserts/Arquitectura.png" alt="Interior de Claustro — arquitectura y espacios" class="hero__img" />
+              <div class="hero__img-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>Espacios premium</span>
+              </div>
+              <div class="hero__img-ornament"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Greek ornamental divider -->
+    <div class="ornament-divider" aria-hidden="true">
+      <svg viewBox="0 0 900 28" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="14" x2="370" y2="14" stroke="#D4AF37" stroke-width="0.6" opacity="0.3"/>
+        <path d="M375,14 L382,7 L389,14 L382,21 Z" fill="#D4AF37" opacity="0.4"/>
+        <circle cx="400" cy="14" r="4" fill="#D4AF37" opacity="0.7"/>
+        <path d="M411,14 L418,7 L425,14 L418,21 Z" fill="#D4AF37" opacity="0.4"/>
+        <line x1="430" y1="14" x2="900" y2="14" stroke="#D4AF37" stroke-width="0.6" opacity="0.3"/>
+        <circle cx="360" cy="14" r="2" fill="#D4AF37" opacity="0.3"/>
+        <circle cx="440" cy="14" r="2" fill="#D4AF37" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <!-- ============================================================
+         PROBLEMA
+    ============================================================ -->
+    <section class="problema" id="problema" aria-label="El problema">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-greek-accent" aria-hidden="true"></div>
+          <span class="section-tag">El desafío</span>
+          <h2 class="section-title">¿Por qué cuesta tanto estudiar en casa?</h2>
+          <p class="section-subtitle">El entorno importa tanto como el esfuerzo. Sin las condiciones adecuadas, el rendimiento cae sin importar cuántas horas inviertas.</p>
+        </div>
+
+        <div class="problema__grid">
+          <article class="problema__card reveal">
+            <div class="problema__card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3 class="problema__card-title">Ruido constante</h3>
+            <p class="problema__card-desc">Televisión, conversaciones, tráfico. El cerebro no puede concentrarse con estímulos auditivos no deseados presentes.</p>
+          </article>
+
+          <article class="problema__card reveal reveal--delay-1">
+            <div class="problema__card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3 class="problema__card-title">Distracciones digitales</h3>
+            <p class="problema__card-desc">Notificaciones, redes sociales y la cama a metros de distancia fragmentan la atención cada pocos minutos.</p>
+          </article>
+
+          <article class="problema__card reveal reveal--delay-2">
+            <div class="problema__card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="problema__card-title">Espacio inadecuado</h3>
+            <p class="problema__card-desc">Sin escritorio ergonómico, buena iluminación ni privacidad, estudiar por horas termina en fatiga y dolor.</p>
+          </article>
+
+          <article class="problema__card reveal reveal--delay-3">
+            <div class="problema__card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+            </div>
+            <h3 class="problema__card-title">Falta de estructura</h3>
+            <p class="problema__card-desc">Sin un entorno diseñado para el trabajo, mantener rutinas de estudio productivas se vuelve casi imposible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Greek ornamental divider -->
+    <div class="ornament-divider ornament-divider--dark" aria-hidden="true">
+      <svg viewBox="0 0 900 28" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="14" x2="370" y2="14" stroke="#D4AF37" stroke-width="0.6" opacity="0.3"/>
+        <path d="M375,14 L382,7 L389,14 L382,21 Z" fill="#D4AF37" opacity="0.4"/>
+        <circle cx="400" cy="14" r="4" fill="#D4AF37" opacity="0.7"/>
+        <path d="M411,14 L418,7 L425,14 L418,21 Z" fill="#D4AF37" opacity="0.4"/>
+        <line x1="430" y1="14" x2="900" y2="14" stroke="#D4AF37" stroke-width="0.6" opacity="0.3"/>
+        <circle cx="360" cy="14" r="2" fill="#D4AF37" opacity="0.3"/>
+        <circle cx="440" cy="14" r="2" fill="#D4AF37" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <!-- ============================================================
+         SOLUCIÓN
+    ============================================================ -->
+    <section class="solucion" id="solucion" aria-label="Nuestra solución">
+      <div class="container">
+        <div class="solucion__split">
+          <div class="solucion__content reveal">
+            <div class="section-greek-accent" aria-hidden="true"></div>
+            <span class="section-tag">La solución</span>
+            <h2 class="section-title solucion__title">Claustro: el entorno que tu rendimiento merece</h2>
+            <p class="solucion__desc">Diseñamos cada rincón pensando en una sola cosa: que puedas estudiar y trabajar con la máxima concentración, comodidad y eficiencia.</p>
+
+            <ul class="solucion__list" role="list">
+              <li class="solucion__list-item">
+                <span class="solucion__check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Ambientes acústicamente tratados para silencio real
+              </li>
+              <li class="solucion__list-item">
+                <span class="solucion__check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Mobiliario ergonómico de primera categoría
+              </li>
+              <li class="solucion__list-item">
+                <span class="solucion__check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Wi-Fi simétrico de fibra óptica dedicado
+              </li>
+              <li class="solucion__list-item">
+                <span class="solucion__check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Horarios flexibles: abierto 12 horas al día
+              </li>
+              <li class="solucion__list-item">
+                <span class="solucion__check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Comunidad de estudiantes comprometidos
+              </li>
+            </ul>
+
+            <a href="#planes" class="btn btn--gold">Conocer los planes</a>
+          </div>
+
+          <div class="solucion__visual reveal reveal--delay-1">
+            <div class="solucion__photo-frame">
+              <img src="Asserts/Recepcion.png" alt="Recepción y entrada principal de Claustro" class="solucion__photo" />
+              <div class="solucion__photo-overlay">
+                <div class="solucion__photo-stat">
+                  <span class="solucion__photo-stat-num">500+</span>
+                  <span class="solucion__photo-stat-lbl">Estudiantes activos</span>
+                </div>
+                <div class="solucion__photo-stat">
+                  <span class="solucion__photo-stat-num">98%</span>
+                  <span class="solucion__photo-stat-lbl">Satisfacción</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Greek ornamental divider -->
+    <div class="ornament-divider" aria-hidden="true">
+      <svg viewBox="0 0 900 28" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="14" x2="370" y2="14" stroke="#D4AF37" stroke-width="0.6" opacity="0.3"/>
+        <path d="M375,14 L382,7 L389,14 L382,21 Z" fill="#D4AF37" opacity="0.4"/>
+        <circle cx="400" cy="14" r="4" fill="#D4AF37" opacity="0.7"/>
+        <path d="M411,14 L418,7 L425,14 L418,21 Z" fill="#D4AF37" opacity="0.4"/>
+        <line x1="430" y1="14" x2="900" y2="14" stroke="#D4AF37" stroke-width="0.6" opacity="0.3"/>
+        <circle cx="360" cy="14" r="2" fill="#D4AF37" opacity="0.3"/>
+        <circle cx="440" cy="14" r="2" fill="#D4AF37" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <!-- ============================================================
+         SERVICIOS
+    ============================================================ -->
+    <section class="servicios" id="servicios" aria-label="Nuestros servicios">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-greek-accent" aria-hidden="true"></div>
+          <span class="section-tag">Servicios</span>
+          <h2 class="section-title">Todo lo que necesitás para estudiar mejor</h2>
+          <p class="section-subtitle">Cada servicio fue pensado para eliminar las fricciones que interrumpen tu concentración.</p>
+        </div>
+
+        <div class="servicios__grid">
+          <article class="servicio-card servicio-card--photo reveal">
+            <div class="servicio-card__photo">
+              <img src="Asserts/CabinaIndividual.png" alt="Cabinas individuales de estudio" loading="lazy" />
+            </div>
+            <div class="servicio-card__body">
+              <div class="servicio-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              </div>
+              <h3 class="servicio-card__title">Puestos individuales</h3>
+              <p class="servicio-card__desc">Escritorios privados con divisores acústicos, iluminación ajustable y espacio dedicado para máxima concentración.</p>
+            </div>
+          </article>
+
+          <article class="servicio-card servicio-card--photo reveal reveal--delay-1">
+            <div class="servicio-card__photo">
+              <img src="Asserts/SalaGrupal.png" alt="Salas de estudio grupal" loading="lazy" />
+            </div>
+            <div class="servicio-card__body">
+              <div class="servicio-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 class="servicio-card__title">Salas grupales</h3>
+              <p class="servicio-card__desc">Espacios colaborativos para equipos de 2 a 8 personas, con pizarrón y pantalla compartida incluidos.</p>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal reveal--delay-2">
+            <div class="servicio-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 9h6"/><path d="M9 13h4"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Cabinas privadas</h3>
+            <p class="servicio-card__desc">Cubículos insonorizados ideales para clases virtuales, videollamadas de trabajo y estudio sin interrupciones.</p>
+          </article>
+
+          <article class="servicio-card reveal reveal--delay-3">
+            <div class="servicio-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Wi-Fi Premium</h3>
+            <p class="servicio-card__desc">Conexión de fibra óptica simétrica de 300 Mbps. Sin cortes, sin lentitud en los momentos críticos.</p>
+          </article>
+
+          <article class="servicio-card reveal">
+            <div class="servicio-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M15 2H9a1 1 0 0 0-1 1v1h8V3a1 1 0 0 0-1-1z"/><path d="M8 12h8"/><path d="M8 16h4"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Lockers personales</h3>
+            <p class="servicio-card__desc">Casilleros seguros con cerradura digital para guardar tus pertenencias sin preocupaciones durante toda la sesión.</p>
+          </article>
+
+          <article class="servicio-card reveal reveal--delay-1">
+            <div class="servicio-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Impresiones y escaneos</h3>
+            <p class="servicio-card__desc">Impresoras láser y escáneres disponibles. Imprimí tus apuntes y trabajos prácticos sin salir del espacio.</p>
+          </article>
+
+          <article class="servicio-card reveal reveal--delay-2">
+            <div class="servicio-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Snacks y café</h3>
+            <p class="servicio-card__desc">Café premium, opciones saludables y zona de hidratación siempre disponibles sin salir del espacio.</p>
+          </article>
+
+          <article class="servicio-card reveal reveal--delay-3">
+            <div class="servicio-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Áreas de descanso</h3>
+            <p class="servicio-card__desc">Zonas de pausa con sofás y luz cálida para desconectarte brevemente y volver con energía renovada.</p>
+          </article>
+
+          <article class="servicio-card reveal">
+            <div class="servicio-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="3"/><path d="M6.5 8a6.5 6.5 0 0 0 0 13H8"/><path d="M17.5 8a6.5 6.5 0 0 1 0 13H16"/><path d="M12 8v13"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Ergonomía premium</h3>
+            <p class="servicio-card__desc">Sillas ergonómicas, escritorios de altura regulable y monitores externos disponibles en puestos seleccionados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALERÍA DE ESPACIOS
+    ============================================================ -->
+    <section class="galeria" id="galeria" aria-label="Galería de espacios">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-greek-accent" aria-hidden="true"></div>
+          <span class="section-tag section-tag--light">Nuestros espacios</span>
+          <h2 class="section-title" style="color: var(--color-white);">Conocé Claustro por dentro</h2>
+          <p class="section-subtitle" style="color: var(--color-slate-300);">Cada rincón fue diseñado para inspirar concentración y bienestar académico.</p>
+        </div>
+
+        <div class="galeria__grid">
+          <figure class="galeria__item galeria__item--large reveal">
+            <img src="Asserts/Patio.png" alt="Patio central de Claustro" loading="lazy" />
+            <figcaption class="galeria__caption">
+              <span class="galeria__caption-title">Patio central</span>
+              <span class="galeria__caption-sub">Área de descanso y transición</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal reveal--delay-1">
+            <img src="Asserts/SalaGrupal.png" alt="Sala de estudio grupal" loading="lazy" />
+            <figcaption class="galeria__caption">
+              <span class="galeria__caption-title">Salas grupales</span>
+              <span class="galeria__caption-sub">Hasta 8 personas</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal reveal--delay-2">
+            <img src="Asserts/CabinaIndividual.png" alt="Cabina de estudio individual" loading="lazy" />
+            <figcaption class="galeria__caption">
+              <span class="galeria__caption-title">Cabinas privadas</span>
+              <span class="galeria__caption-sub">Silencio garantizado</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal reveal--delay-1">
+            <img src="Asserts/Recepcion.png" alt="Recepción de Claustro" loading="lazy" />
+            <figcaption class="galeria__caption">
+              <span class="galeria__caption-title">Recepción</span>
+              <span class="galeria__caption-sub">Bienvenida personalizada</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item reveal reveal--delay-2">
+            <img src="Asserts/Arquitectura.png" alt="Arquitectura interior de Claustro" loading="lazy" />
+            <figcaption class="galeria__caption">
+              <span class="galeria__caption-title">Arquitectura</span>
+              <span class="galeria__caption-sub">Diseño clásico moderno</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Greek ornamental divider -->
+    <div class="ornament-divider" aria-hidden="true">
+      <svg viewBox="0 0 900 28" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="14" x2="370" y2="14" stroke="#D4AF37" stroke-width="0.6" opacity="0.3"/>
+        <path d="M375,14 L382,7 L389,14 L382,21 Z" fill="#D4AF37" opacity="0.4"/>
+        <circle cx="400" cy="14" r="4" fill="#D4AF37" opacity="0.7"/>
+        <path d="M411,14 L418,7 L425,14 L418,21 Z" fill="#D4AF37" opacity="0.4"/>
+        <line x1="430" y1="14" x2="900" y2="14" stroke="#D4AF37" stroke-width="0.6" opacity="0.3"/>
+        <circle cx="360" cy="14" r="2" fill="#D4AF37" opacity="0.3"/>
+        <circle cx="440" cy="14" r="2" fill="#D4AF37" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <!-- ============================================================
+         BENEFICIOS
+    ============================================================ -->
+    <section class="beneficios" id="beneficios" aria-label="Beneficios">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-greek-accent" aria-hidden="true"></div>
+          <span class="section-tag">Beneficios</span>
+          <h2 class="section-title">Lo que obtenés al estudiar en Claustro</h2>
+        </div>
+
+        <div class="beneficios__grid">
+          <article class="beneficio reveal">
+            <div class="beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div class="beneficio__num">12hs</div>
+            <h3 class="beneficio__title">Concentración máxima</h3>
+            <p class="beneficio__desc">Abierto de 7 a 23hs para adaptarse a tu ritmo de estudio, sea mañana, tarde o noche.</p>
+          </article>
+
+          <article class="beneficio reveal reveal--delay-1">
+            <div class="beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div class="beneficio__num">+40%</div>
+            <h3 class="beneficio__title">Productividad comprobada</h3>
+            <p class="beneficio__desc">Nuestros usuarios reportan un aumento promedio del 40% en su rendimiento académico en el primer mes.</p>
+          </article>
+
+          <article class="beneficio reveal reveal--delay-2">
+            <div class="beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+            </div>
+            <div class="beneficio__num">3 tipos</div>
+            <h3 class="beneficio__title">Flexibilidad total</h3>
+            <p class="beneficio__desc">Pagá solo lo que usás. Por hora, pase diario o membresía mensual sin cargos ocultos ni compromisos.</p>
+          </article>
+
+          <article class="beneficio reveal reveal--delay-3">
+            <div class="beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="beneficio__num">98%</div>
+            <h3 class="beneficio__title">Bienestar estudiantil</h3>
+            <p class="beneficio__desc">El 98% de nuestros usuarios recomendaría Claustro a un amigo. Nos obsesiona tu experiencia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CÓMO FUNCIONA
+    ============================================================ -->
+    <section class="como-funciona" id="como-funciona" aria-label="Cómo funciona">
+      <div class="section-illus section-illus--athena" aria-hidden="true">
+        <img src="Asserts/illustration-athena.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-greek-accent" aria-hidden="true"></div>
+          <span class="section-tag section-tag--light">Proceso</span>
+          <h2 class="section-title" style="color: var(--color-white);">Tan simple como estudiar</h2>
+          <p class="section-subtitle" style="color: var(--color-slate-300);">Tres pasos para tener tu espacio listo y empezar a concentrarte.</p>
+        </div>
+
+        <div class="pasos__grid">
+          <article class="paso reveal">
+            <div class="paso__num" aria-hidden="true">I</div>
+            <div class="paso__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+            </div>
+            <h3 class="paso__title">Elegí tu plan</h3>
+            <p class="paso__desc">Seleccioná entre acceso por hora, pase diario o membresía mensual según tu ritmo y necesidades.</p>
+          </article>
+
+          <div class="paso__connector" aria-hidden="true">
+            <svg width="40" height="16" viewBox="0 0 40 16" fill="none"><path d="M0 8h36m0 0-6-6m6 6-6 6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+
+          <article class="paso reveal reveal--delay-1">
+            <div class="paso__num" aria-hidden="true">II</div>
+            <div class="paso__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+            </div>
+            <h3 class="paso__title">Reservá tu espacio</h3>
+            <p class="paso__desc">Elegí fecha, horario y tipo de espacio desde nuestra plataforma online. Confirmación inmediata por email.</p>
+          </article>
+
+          <div class="paso__connector" aria-hidden="true">
+            <svg width="40" height="16" viewBox="0 0 40 16" fill="none"><path d="M0 8h36m0 0-6-6m6 6-6 6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+
+          <article class="paso reveal reveal--delay-2">
+            <div class="paso__num" aria-hidden="true">III</div>
+            <div class="paso__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="paso__title">Llegá y concentrate</h3>
+            <p class="paso__desc">Ingresá con tu código QR, encontrá tu lugar ya listo y empezá a rendir desde el primer minuto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PLANES Y PRECIOS
+    ============================================================ -->
+    <section class="planes" id="planes" aria-label="Planes y precios">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-greek-accent" aria-hidden="true"></div>
+          <span class="section-tag">Precios</span>
+          <h2 class="section-title">Planes para cada necesidad</h2>
+          <p class="section-subtitle">Sin costos ocultos. Sin letras pequeñas. Solo el precio que ves.</p>
+        </div>
+
+        <div class="planes__grid">
+          <article class="plan-card reveal">
+            <div class="plan-card__header">
+              <span class="plan-card__tag">Flexible</span>
+              <h3 class="plan-card__name">Por Hora</h3>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">$</span>
+                <span class="plan-card__amount">800</span>
+                <span class="plan-card__period">/ hora</span>
+              </div>
+              <p class="plan-card__desc">Ideal para sesiones cortas o cuando necesitás un espacio de urgencia.</p>
+            </div>
+            <ul class="plan-card__features" role="list">
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Puesto individual
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Wi-Fi Premium incluido
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Acceso a snacks y bebidas
+              </li>
+              <li class="plan-card__feature plan-card__feature--disabled">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Locker personal
+              </li>
+              <li class="plan-card__feature plan-card__feature--disabled">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Impresiones incluidas
+              </li>
+            </ul>
+            <a href="#contacto" class="btn btn--outline btn--full">Reservar ahora</a>
+          </article>
+
+          <article class="plan-card plan-card--featured reveal reveal--delay-1" aria-label="Plan más popular">
+            <div class="plan-card__popular-badge">Más popular</div>
+            <div class="plan-card__header">
+              <span class="plan-card__tag">Recomendado</span>
+              <h3 class="plan-card__name">Pase Diario</h3>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">$</span>
+                <span class="plan-card__amount">3.500</span>
+                <span class="plan-card__period">/ día</span>
+              </div>
+              <p class="plan-card__desc">La mejor relación calidad-precio para una jornada completa de estudio.</p>
+            </div>
+            <ul class="plan-card__features" role="list">
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Puesto individual todo el día
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Wi-Fi Premium incluido
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Snacks y bebidas ilimitados
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Locker personal asignado
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                5 impresiones incluidas
+              </li>
+            </ul>
+            <a href="#contacto" class="btn btn--gold btn--full">Reservar ahora</a>
+          </article>
+
+          <article class="plan-card reveal reveal--delay-2">
+            <div class="plan-card__header">
+              <span class="plan-card__tag">Ahorro máximo</span>
+              <h3 class="plan-card__name">Membresía Mensual</h3>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">$</span>
+                <span class="plan-card__amount">45.000</span>
+                <span class="plan-card__period">/ mes</span>
+              </div>
+              <p class="plan-card__desc">Para quienes estudian o trabajan todos los días y quieren el máximo rendimiento.</p>
+            </div>
+            <ul class="plan-card__features" role="list">
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Acceso ilimitado al espacio
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Wi-Fi Premium + escritorio dedicado
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Snacks y café ilimitados
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Locker permanente asignado
+              </li>
+              <li class="plan-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Impresiones ilimitadas + salas grupales
+              </li>
+            </ul>
+            <a href="#contacto" class="btn btn--outline btn--full">Comenzar membresía</a>
+          </article>
+        </div>
+
+        <p class="planes__note reveal">Todos los precios en pesos argentinos. IVA no incluido. Consultanos por descuentos para grupos y convenios universitarios.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         STATS / IMPACTO
+    ============================================================ -->
+    <section class="stats" id="stats" aria-label="Nuestro impacto">
+      <div class="stats__bg" aria-hidden="true">
+        <div class="stats__orb stats__orb--1"></div>
+        <div class="stats__orb stats__orb--2"></div>
+      </div>
+      <div class="section-illus section-illus--knowledge" aria-hidden="true">
+        <img src="Asserts/illustration-knowledge.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-greek-accent" aria-hidden="true"></div>
+          <span class="section-tag section-tag--light">Impacto</span>
+          <h2 class="section-title" style="color: var(--color-white);">Números que hablan por sí solos</h2>
+        </div>
+
+        <div class="stats__grid">
+          <div class="stat reveal">
+            <div class="stat__num" data-target="500" data-suffix="+">0</div>
+            <div class="stat__label">Estudiantes activos</div>
+          </div>
+          <div class="stat reveal reveal--delay-1">
+            <div class="stat__num" data-target="98" data-suffix="%">0</div>
+            <div class="stat__label">Satisfacción general</div>
+          </div>
+          <div class="stat reveal reveal--delay-2">
+            <div class="stat__num" data-target="12" data-suffix="hs">0</div>
+            <div class="stat__label">Disponibilidad diaria</div>
+          </div>
+          <div class="stat reveal reveal--delay-3">
+            <div class="stat__num" data-target="3" data-suffix=" sedes">0</div>
+            <div class="stat__label">En toda Córdoba</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACTO / CTA FINAL
+    ============================================================ -->
+    <section class="contacto" id="contacto" aria-label="Contacto">
+      <div class="container">
+        <div class="contacto__inner reveal">
+          <div class="section-greek-accent" aria-hidden="true"></div>
+          <span class="section-tag">Contacto</span>
+          <h2 class="contacto__title">¿Listo para estudiar diferente?</h2>
+          <p class="contacto__desc">Empezá hoy. Tu primera hora es gratis con el código <strong>CLAUSTRO1</strong>.</p>
+
+          <div class="contacto__actions">
+            <a href="mailto:hola@claustro.com.ar" class="btn btn--gold btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Escribinos
+            </a>
+            <a href="https://instagram.com/claustro" class="btn btn--ghost btn--lg" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <!-- Greek meander top border -->
+    <div class="footer__meander" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo-link" aria-label="Claustro inicio">
+            <img src="Asserts/Logo.png" alt="Claustro" class="footer__logo-img" />
+            <span class="footer__logo-text">CLAUSTRO</span>
+          </a>
+          <p class="footer__desc">Espacios de estudio premium para quienes toman en serio su rendimiento académico y profesional.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/claustro" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/claustro" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/claustroar" class="footer__social-link" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16"/><path d="M4 20L20 4"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Servicios</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#servicios" class="footer__link">Puestos individuales</a></li>
+            <li><a href="#servicios" class="footer__link">Salas grupales</a></li>
+            <li><a href="#servicios" class="footer__link">Cabinas privadas</a></li>
+            <li><a href="#servicios" class="footer__link">Wi-Fi Premium</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Planes</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#planes" class="footer__link">Por hora</a></li>
+            <li><a href="#planes" class="footer__link">Pase diario</a></li>
+            <li><a href="#planes" class="footer__link">Membresía mensual</a></li>
+            <li><a href="#contacto" class="footer__link">Convenios universitarios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contacto</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="mailto:hola@claustro.com.ar" class="footer__link">hola@claustro.com.ar</a></li>
+            <li><a href="tel:+5493514001234" class="footer__link">+54 9 351 400-1234</a></li>
+            <li><span class="footer__link footer__link--text">Córdoba, Argentina</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Claustro. Todos los derechos reservados.</p>
+        <p class="footer__academic">Universidad Tecnológica Nacional · Facultad Regional Córdoba · Trabajo Práctico — Administración General</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       LIGHTBOX
+  ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen" hidden>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Imagen anterior">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Imagen siguiente">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <div class="lightbox__caption" id="lightboxCaption">
+        <span class="lightbox__caption-title" id="lightboxTitle"></span>
+        <span class="lightbox__caption-sub" id="lightboxSub"></span>
+      </div>
+      <div class="lightbox__meander"></div>
+    </div>
+    <div class="lightbox__dots" id="lightboxDots"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
